@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Progress</title>
+    <!-- чтобы унифицировать стили браузеров по умолчанию. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Главное содержимое страницы -->
+    <main class="progress wrapper">
+    	<h1 class="progress__title">Progress</h1>
+        <div class="progress-container" data-value="60">
+            <svg class="progress-bar" id="svg" width="200" height="200" version="1.1">
+        		<circle class="progress-bar__meter" r="85" cx="100" cy="100" fill="transparent" stroke-width="20" stroke-dashoffset="0"></circle>
+        		<circle class="progress-bar__value" r="85" cx="100" cy="100" fill="transparent" stroke-width="20" stroke-dashoffset="0" stroke-dasharray="301.59 "></circle>
+        	</svg>
+        </div>
+        <div class="progress-control">
+            <!--  -->
+            <div class="progress-control__item">
+            	<input id="control" class="progress-control__value" type="number" min="0" max="100" value="60">
+                <span class="title">Value</span>
+            </div>
+            <!--  -->
+            <div class="progress-control__item">
+                <input type="checkbox" class="checkbox " id="checkbox-animate" />
+                <label for="checkbox-animate">Animate</label>
+            </div>
+            <!--  -->
+            <div class="progress-control__item">
+                <input type="checkbox" class="checkbox" id="checkbox-hide" />
+                <label for="checkbox-hide">Hide</label>
+            </div>
+        </div>
+        <script src="main.js"></script>
+
+    </main>
+
+
+</body>
+
+</html>
